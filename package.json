@@ -1,7 +1,7 @@
 {
-  "name": "jstransformer-foo",
-  "version": "0.0.0",
-  "description": "Foo support for JSTransformers.",
+  "name": "jstransformer-inline-css",
+  "version": "0.1.0",
+  "description": "Inline-CSS support for JSTransformers.",
   "keywords": [
     "jstransformer"
   ],
@@ -22,11 +22,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jstransformers/jstransformer-foo.git"
+    "url": "https://github.com/jstransformers/jstransformer-inline-css.git"
   },
   "author": {
     "name": "JSTransformers Team",
     "url": "http://github.com/orgs/jstransformers/people"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "extend-shallow": "^3.0.2",
+    "inline-css": "^2.4.0"
+  }
 }

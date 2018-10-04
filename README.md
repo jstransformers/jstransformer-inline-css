@@ -1,31 +1,24 @@
-# JSTransformer Boilerplate
+# jstransformer-inline-css
 
-Use JSTransformer Boilerplate to create and update transformers.
+[Inline-CSS](https://www.npmjs.com/package/inline-css) support for [JSTransformers](http://github.com/jstransformers).
 
-1. Visit [the Boilerplate Wiki](https://github.com/jstransformers/boilerplate/wiki) on how to get started
-2. Remove this top notice from any transformers
-
-# jstransformer-foo
-
-[Foo](http://example.com) support for [JSTransformers](http://github.com/jstransformers).
-
-[![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-foo/master.svg)](https://travis-ci.org/jstransformers/jstransformer-foo)
-[![Coverage Status](https://img.shields.io/codecov/c/github/jstransformers/jstransformer-foo/master.svg)](https://codecov.io/gh/jstransformers/jstransformer-foo)
-[![Dependency Status](https://img.shields.io/david/jstransformers/jstransformer-foo/master.svg)](http://david-dm.org/jstransformers/jstransformer-foo)
-[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-foo.svg)](https://greenkeeper.io/)
-[![NPM version](https://img.shields.io/npm/v/jstransformer-foo.svg)](https://www.npmjs.org/package/jstransformer-foo)
+[![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-inline-css/master.svg)](https://travis-ci.org/jstransformers/jstransformer-inline-css)
+[![Coverage Status](https://img.shields.io/codecov/c/github/jstransformers/jstransformer-inline-css/master.svg)](https://codecov.io/gh/jstransformers/jstransformer-inline-css)
+[![Dependency Status](https://img.shields.io/david/jstransformers/jstransformer-inline-css/master.svg)](http://david-dm.org/jstransformers/jstransformer-inline-css)
+[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-inline-css.svg)](https://greenkeeper.io/)
+[![NPM version](https://img.shields.io/npm/v/jstransformer-inline-css.svg)](https://www.npmjs.org/package/jstransformer-inline-css)
 
 ## Installation
 
-    npm install jstransformer-foo
+    npm install jstransformer-inline-css
 
 ## API
 
 ```js
-var foo = require('jstransformer')(require('jstransformer-foo'))
+var inlineCss = require('jstransformer')(require('jstransformer-inline-css'))
 
-foo.render('blah').body
-//=> 'blah'
+inlineCss.render('<style>div{color:red;}</style><div/>').body
+//=> '<div style="color:red"/>'
 ```
 
 ## License

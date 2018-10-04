@@ -1,9 +1,23 @@
 'use strict'
 
-exports.name = 'foo'
-exports.inputFormats = ['foo', 'foobar']
+const inlineCss = require('inline-css')
+const extend = require('extend-shallow')
+
+exports.name = 'inline-css'
+exports.inputFormats = ['inline-css']
 exports.outputFormat = 'html'
 
-exports.render = function (str) {
-  return str
+exports.renderAsync = function (str, options, locals) {
+  const opts = extend({}, options, locals)
+  if (!opts.url) {
+    opts.url = 'http://example.com'
+  }
+  return new Promise((resolve, reject) => {
+    inlineCss(str, opts).then(out => {
+      if (out) {
+        return resolve(out)
+      }
+      reject(out)
+    })
+  })
 }
