@@ -12,11 +12,13 @@ exports.renderAsync = function (str, options, locals) {
   if (!opts.url) {
     opts.url = 'http://example.com'
   }
+
   return new Promise((resolve, reject) => {
     inlineCss(str, opts).then(out => {
       if (out) {
         return resolve(out)
       }
+
       reject(out)
     })
   })
