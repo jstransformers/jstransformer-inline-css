@@ -5,7 +5,6 @@
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-inline-css/master.svg)](https://travis-ci.org/jstransformers/jstransformer-inline-css)
 [![Coverage Status](https://img.shields.io/codecov/c/github/jstransformers/jstransformer-inline-css/master.svg)](https://codecov.io/gh/jstransformers/jstransformer-inline-css)
 [![Dependency Status](https://img.shields.io/david/jstransformers/jstransformer-inline-css/master.svg)](http://david-dm.org/jstransformers/jstransformer-inline-css)
-
 [![NPM version](https://img.shields.io/npm/v/jstransformer-inline-css.svg)](https://www.npmjs.org/package/jstransformer-inline-css)
 
 ## Installation
